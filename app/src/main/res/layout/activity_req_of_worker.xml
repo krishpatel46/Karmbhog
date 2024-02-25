@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3887d"
+    tools:context=".Req_of_worker">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Request For Workers "
+        android:textSize="25dp"
+        android:background="#6886c5"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="80dp"
+        android:textStyle="bold"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manager name : "
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="80dp"
+        android:textStyle="italic"
+        android:textColor="#08174f"
+        />
+    <EditText
+        android:id="@+id/managerName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manager Mobile No : "
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="160dp"
+        android:textStyle="italic"
+        android:textColor="#08174f"
+        />
+    <EditText
+        android:id="@+id/managerMobNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work Address : "
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="240dp"
+        android:textStyle="italic"
+        android:textColor="#08174f"
+        />
+    <EditText
+        android:id="@+id/workAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="270dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+    <!--TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Company name : "
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="320dp"
+        android:textStyle="italic"
+        android:textColor="#08174f"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        /-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Work name : "
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="320dp"
+        android:textStyle="italic"
+        android:textColor="#08174f"
+        />
+    <EditText
+        android:id="@+id/workName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Workers Needed : "
+        android:textSize="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="400dp"
+        android:textStyle="italic"
+        android:textColor="#08174f"
+        />
+    <EditText
+        android:id="@+id/workersNeededNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/errorDetails"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/workersNeededNum"
+        android:gravity="center"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/errorTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:text="***"
+            android:textColor="@android:color/holo_red_dark"
+            android:textSize="16sp"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/reqBtn"
+        android:layout_below="@+id/errorDetails"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="210dp"
+        android:layout_marginRight="30dp"
+        android:background="@drawable/button_design">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="Request"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+        </TextView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/cancelBtn"
+        android:layout_below="@+id/errorDetails"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="220dp"
+        android:background="@drawable/button_design">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="8dp"
+            android:text="Cancel"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold">
+        </TextView>
+
+    </RelativeLayout>
+</RelativeLayout>

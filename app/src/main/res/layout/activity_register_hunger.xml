@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b3887d"
+    tools:context=".Register_Hunger">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/mainHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter Hunger Details "
+            android:textSize="25sp"
+            android:background="#6886c5"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textAlignment="center"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            />
+
+        <TextView
+            android:id="@+id/userNameHeader"
+            android:layout_below="@+id/mainHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="User name : "
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:textStyle="italic"
+            android:textColor="#08174f"
+            />
+        <EditText
+            android:id="@+id/empUserName"
+            android:layout_below="@+id/userNameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/nameHeader"
+            android:layout_below="@+id/empUserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Full name : "
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textColor="#08174f"
+            />
+        <EditText
+            android:id="@+id/empName"
+            android:layout_below="@+id/nameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/mobNoHeader"
+            android:layout_below="@+id/empName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mobile No : "
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textColor="#08174f"
+            />
+        <EditText
+            android:id="@+id/empMobNo"
+            android:layout_below="@+id/mobNoHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/ageHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empMobNo"
+            android:text="Age : "
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textColor="#08174f"
+            />
+        <EditText
+            android:id="@+id/empAge"
+            android:layout_below="@+id/ageHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/addressHeader"
+            android:layout_below="@+id/empAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Address : "
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textColor="#08174f"
+            />
+        <EditText
+            android:id="@+id/empAddress"
+            android:layout_below="@+id/addressHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            />
+        <TextView
+            android:id="@+id/empAssignedCompany"
+            android:layout_below="@+id/empAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Company name : "
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textColor="#08174f"
+            />
+        <Spinner
+            android:id="@+id/empCompanySpinner"
+            android:layout_below="@+id/empAssignedCompany"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            />
+
+        <TextView
+            android:id="@+id/workNameHeader"
+            android:layout_below="@+id/empCompanySpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Work name : "
+            android:textSize="20dp"
+            android:layout_marginLeft="10dp"
+            android:textStyle="italic"
+            android:textColor="#08174f"
+            />
+        <Spinner
+            android:id="@+id/empWorkName"
+            android:layout_below="@+id/workNameHeader"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:spinnerMode="dropdown"
+            />
+
+        <LinearLayout
+            android:id="@+id/errorDetails"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/empWorkName"
+            android:gravity="center"
+            app:layout_constraintVertical_bias="1.0">
+
+            <TextView
+                android:id="@+id/errorTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="***"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/submitBtn"
+            android:layout_below="@+id/errorDetails"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="210dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/button_design2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:text="Submit"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/cancelBtn"
+            android:layout_below="@+id/errorDetails"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="220dp"
+            android:background="@drawable/button_design">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="8dp"
+                android:text="Cancel"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

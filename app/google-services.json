@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "917249133640",
+    "project_id": "karmbhog-48c79",
+    "storage_bucket": "karmbhog-48c79.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:917249133640:android:a96b60c8a2d45be2dc9c7d",
+        "android_client_info": {
+          "package_name": "com.example.karmbhog"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA1yCrfwMVHG5CLycfR8JHTBEZI8z0-pRQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

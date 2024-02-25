@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KarmBhog"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".Register_Hunger"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_password"
+            android:exported="false" />
+        <activity
+            android:name=".SignUp"
+            android:exported="false" />
+        <activity
+            android:name=".Company_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Add_kitchens"
+            android:exported="false" />
+        <activity
+            android:name=".Company_detail"
+            android:exported="false" />
+        <activity
+            android:name=".Display_events"
+            android:exported="false" />
+        <activity
+            android:name=".Workers"
+            android:exported="false" />
+        <activity
+            android:name=".Work_details"
+            android:exported="false" />
+        <activity
+            android:name=".User_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Req_of_worker"
+            android:exported="false" />
+        <activity
+            android:name=".Report"
+            android:exported="false" />
+        <activity
+            android:name=".Register_event"
+            android:exported="false" />
+        <activity
+            android:name=".Kitchens"
+            android:exported="false" />
+        <activity
+            android:name=".Give_feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Feedback"
+            android:exported="false" />
+        <activity
+            android:name=".Donation"
+            android:exported="false" />
+        <activity
+            android:name=".display_req"
+            android:exported="false" />
+        <activity
+            android:name=".display_local_kitchen"
+            android:exported="false" />
+        <activity
+            android:name=".Display_hungers"
+            android:exported="false" />
+        <activity
+            android:name=".Dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".CompanySignUp"
+            android:exported="false" />
+        <activity
+            android:name=".AskUserRole"
+            android:exported="true">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:exported="false">
+
+        </activity>
+    </application>
+
+</manifest>
